@@ -1,23 +1,17 @@
-.detail {
-    text-align: center;
-}
-
-.detail img {
-    width:40%;
-}
-  
-
 .carPrice{
     margin: 0;
     position: relative;
-
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 100px;
-
+    flex-direction: column;
     align-items: center;
     min-height: 970px;
+  
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./layer2.svg");
   }
   
   .priceRange{
@@ -35,7 +29,6 @@
   }
   
   .priceCard{
-    width: 300px;
     box-shadow: 0 1px 6px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
   }

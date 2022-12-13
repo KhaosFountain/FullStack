@@ -28,7 +28,7 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href='/'>All Meetups</Link> ({globalCtx.theGlobalObject.meetings.length})
+            <Link href='/'>Home</Link> 
           </li>
           <li>
             <Link href='/new-meetup'>Add New Meetup</Link>

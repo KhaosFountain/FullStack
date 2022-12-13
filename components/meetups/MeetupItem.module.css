@@ -11,6 +11,7 @@
 
 .image {
   margin-top: 100px;
+  margin-left: 100px;
   width: 800px;
   height: 30rem;
   overflow: hidden;
@@ -48,6 +49,8 @@
 .actions {
   padding: 1rem;
   text-align: center;
+  
+  margin-top: 0%;
 }
 
 .actions button {
@@ -66,3 +69,4 @@
 
   
 }
+
