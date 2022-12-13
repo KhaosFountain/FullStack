@@ -7,7 +7,7 @@
 }
   
 
-.carPrice{
+.opt{
     margin: 0;
     position: relative;
 
@@ -17,7 +17,7 @@
     gap: 100px;
 
     align-items: center;
-    min-height: 970px;
+    min-height: 550px;
   }
   
   .priceRange{
@@ -48,3 +48,38 @@
   .priceCardImage{
     width: 200px;
   }
+
+
+  /* this is the code for the pop up */
+  
+.popup, .overlay{
+  width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.popup-content{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.overlay{
+  background: rgba(49,49,49,0.8);
+}
+
+
+
+
+

@@ -6,9 +6,11 @@
   display: flex;
   flex-direction: row;
 
-  gap: 200px;
+  justify-content: center;
+
+
   
 
   width: 1900px;
-  height: 900px;
+  height: 1200px;
 }
