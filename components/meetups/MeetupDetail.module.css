@@ -3,11 +3,11 @@
 }
 
 .detail img {
-    width:40%;
+    width: 40%;
 }
-  
 
-.opt{
+
+.opt {
     margin: 0;
     position: relative;
 
@@ -18,39 +18,39 @@
 
     align-items: center;
     min-height: 550px;
-  }
-  
-  .priceRange{
+}
+
+.priceRange {
     display: flex;
     flex-direction: row;
     gap: 40px;
-  
+
     height: 500px;
     align-items: center;
-  
-  }
-  
-  .cardDetail{
+
+}
+
+.cardDetail {
     text-align: center;
-  }
-  
-  .priceCard{
+}
+
+.priceCard {
     width: 300px;
-    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-  }
-  
-  .priceCard:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.priceCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     transform: scale(1.15);
-  }
-  
-  .priceCardImage{
+}
+
+.priceCardImage {
     width: 200px;
-  }
+}
 
 
-  /* this is the code for the pop up */
+/* this is the code for the pop up */
 
 .btn-popup {
     padding: 10px 20px;
@@ -59,52 +59,87 @@
     font-size: 18px;
 }
 
-.closeBtn{
+.closeBtn::before {
+    content: "X";
+    font-size: 25px;
+    font-weight: bold;
+
+
+}
+
+.closeBtn:hover {
+    color: red;
+}
+
+.closeBtn {
     position: absolute;
     top: 10px;
     right: 10px;
-    padding: 5px 7px;
+
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+
 }
-  
-.popup, .overlay{
-  width: 100vw;
+
+.popup, .overlay {
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     position: fixed;
+
+
+}
+
+.popupContent {
+    position: absolute;
+
+    top: 40%;
+    left: 35%;
+    width: 30%;
+
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; */
+
+    line-height: 1.4;
+    color: #f6ff00;
+    padding: 14px 28px;
+    border-radius: 3px;
+
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+
+    animation-duration: 0.5s;
+    animation-name: popup;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes popup {
     
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
-
-.popupContent{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 1.4;
-  background: #f1f1f1;
-  padding: 14px 28px;
-  border-radius: 3px;
-  max-width: 600px;
-  min-width: 300px;
-
-  background-color: white;
-  border: 1px solid black;
-  transition: all 0.3s ease-in-out;
-
-}
-
-.popupContent:active{
-    opacity: 1;
-  visibility: visible;
-}
-
-.overlay{
-  background: rgba(49,49,49,0.8);
-}
-
-
-
-
-

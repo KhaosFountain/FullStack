@@ -13,6 +13,8 @@
 .section{
   display: flex;
   flex-direction: row;
+
+  min-height: 700px;
 }
 
 .image {
