@@ -24,6 +24,10 @@ export default function () {
              option3Detail={temp.option3Detail}
              option4Detail={temp.option4Detail}
              phoneNumber={temp.phoneNumber}
+             price1={temp.price1}
+             price2={temp.price2}
+             price3={temp.price3}
+             price4={temp.price4}
              />
         }
     }
