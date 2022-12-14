@@ -20,6 +20,11 @@ function NewMeetupForm(props) {
 
   const phoneNumberInputRef = useRef();
 
+  const price1InoutRef = useRef();
+  const price2InoutRef = useRef();
+  const price3InoutRef = useRef();
+  const price4InoutRef = useRef();
+
   function submitHandler(event) {
     event.preventDefault();
 
@@ -40,6 +45,11 @@ function NewMeetupForm(props) {
 
     const enteredPhoneNumber = phoneNumberInputRef.current.value;
 
+    const enteredPrice1 = price1InoutRef.current.value;
+    const enteredPrice2 = price2InoutRef.current.value;
+    const enteredPrice3 = price3InoutRef.current.value;
+    const enteredPrice4 = price4InoutRef.current.value;
+
     const meetupData = {
       meetingId: enteredTitle,
       title: enteredTitle,
@@ -55,6 +65,10 @@ function NewMeetupForm(props) {
       option3Detail: enteredOption3Detail,
       option4Detail: enteredOption4Detail,
       phoneNumber: enteredPhoneNumber,
+      price1: enteredPrice1,
+      price2: enteredPrice2,
+      price3: enteredPrice3,
+      price4: enteredPrice4,
     };
 
     props.onAddMeetup(meetupData);
@@ -102,6 +116,14 @@ function NewMeetupForm(props) {
             rows="4"
             ref={option1DetailInputRef}
           ></textarea>
+
+          <label htmlFor="price1">Price</label>
+          <textarea
+            id="price1"
+            required
+            rows="1"
+            ref={price1InoutRef}
+          ></textarea>
         </div>
 
         <div className={classes.control}>
@@ -120,6 +142,14 @@ function NewMeetupForm(props) {
             rows="4"
             ref={option2DetailInputRef}
           ></textarea>
+
+          <label htmlFor="price2">Price</label>
+          <textarea
+            id="price2"
+            required
+            rows="1"
+            ref={price1InoutRef}
+          ></textarea>
         </div>
 
         <div className={classes.control}>
@@ -137,6 +167,14 @@ function NewMeetupForm(props) {
             rows="4"
             ref={option3DetailInputRef}
           ></textarea>
+
+          <label htmlFor="price3">Price</label>
+          <textarea
+            id="price3"
+            required
+            rows="1"
+            ref={price1InoutRef}
+          ></textarea>
         </div>
 
         <div className={classes.control}>
@@ -153,6 +191,14 @@ function NewMeetupForm(props) {
             required
             rows="4"
             ref={option4DetailInputRef}
+          ></textarea>
+
+          <label htmlFor="price4">Price</label>
+          <textarea
+            id="price4"
+            required
+            rows="1"
+            ref={price1InoutRef}
           ></textarea>
         </div>
 

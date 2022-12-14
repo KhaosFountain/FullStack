@@ -49,6 +49,7 @@ function MeetupDetail(props) {
                 <h2>{props.option1}</h2>
                 <p>Phone Number: {props.phoneNumber}</p>
                 <p>{props.option1Detail}</p>
+                <p>Price: {props.price1}</p>
                 <button className={styles.closeBtn} onClick={Option1}></button>
             </div>
           </div>
@@ -70,6 +71,7 @@ function MeetupDetail(props) {
                 <h2>{props.option2}</h2>
                 <p>Phone Number: {props.phoneNumber}</p>
                 <p>{props.option2Detail}</p>
+                <p>Price: {props.price2}</p>
                 <button className={styles.closeBtn} onClick={Option2}></button>
             </div>
           </div>
@@ -79,7 +81,7 @@ function MeetupDetail(props) {
             <div className={styles.cardDetail}>
               <div className={styles.cardDetail}>
                 <h4>
-                  <p>{props.option3}     $100</p>
+                  <p>{props.option3}</p>
                 </h4>
               </div>
             </div>
@@ -91,6 +93,7 @@ function MeetupDetail(props) {
                 <h2>{props.option3}</h2>
                 <p>Phone Number: {props.phoneNumber}</p>
                 <p>{props.option3Detail}</p>
+                <p>Price: {props.price3}</p>
                 <button className={styles.closeBtn} onClick={Option3}></button>
             </div>
           </div>
@@ -114,6 +117,7 @@ function MeetupDetail(props) {
                 <h2>{props.option4}</h2>
                 <p>Phone Number: {props.phoneNumber}</p>
                 <p>{props.option4Detail}</p>
+                <p>Price: {props.price4}</p>
                 <button className={styles.closeBtn} onClick={Option4}></button>
             </div>
           </div>
