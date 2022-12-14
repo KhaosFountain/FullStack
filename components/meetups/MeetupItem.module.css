@@ -2,7 +2,7 @@
   background-color: rgb(249, 249, 249);
   border-radius: 6px;
   border: 1px solid black;
-
+  height: 500px;
   display: flex;
   flex-direction: column;
 
@@ -18,8 +18,9 @@
 }
 
 .image {
-  margin-top: 100px;
-  margin-left: 100px;
+  justify-content: center;
+  margin-top: 0%;
+  margin-left: 2;
   width: 800px;
   height: 40rem;
   overflow: hidden;
@@ -41,9 +42,9 @@
 }
 
 .content {
-  background-color: aqua;
+ 
   text-align: center;
-
+  
   padding: 1rem;
 
   display: flex;
@@ -66,10 +67,11 @@
 
 .actions {
   padding: 1rem;
-
   text-align: center;
-
-  margin-top: 30%;
+  width:200px;
+  height: 150px;
+  margin-top: 25%;
+  margin-left: 9%;
 }
 
 .actions button {
