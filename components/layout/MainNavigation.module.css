@@ -8,16 +8,18 @@
   padding: 0 10%;
   color: rgb(255, 157, 0);
 }
-.Title {
+.title {
   color: rgb(255, 157, 0);
-  font-Size: 2rem;
-  margin-left: 0%;
+  font-Size: 4rem;
+  margin-right: -400px;
+
 }
 
 .logo {
   font-size: 2rem;
   color: rgb(255, 157, 0);
   font-weight: bold;
+  margin-right: 900px;
 }
 
 .header ul {

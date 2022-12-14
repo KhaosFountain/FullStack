@@ -31,7 +31,7 @@ function MeetupDetail(props) {
           <img className={styles.image} src={props.image} alt={props.title} />
           <h1>{props.title}</h1>
           <address>{props.address}</address>
-          <p>{props.description}</p>
+          <p className={styles.desc}>{props.description}</p>
         </div>
 
         <div className={styles.opt}>

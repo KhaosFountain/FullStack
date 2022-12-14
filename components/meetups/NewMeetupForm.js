@@ -148,7 +148,7 @@ function NewMeetupForm(props) {
             id="price2"
             required
             rows="1"
-            ref={price1InoutRef}
+            ref={price2InoutRef}
           ></textarea>
         </div>
 
@@ -173,7 +173,7 @@ function NewMeetupForm(props) {
             id="price3"
             required
             rows="1"
-            ref={price1InoutRef}
+            ref={price3InoutRef}
           ></textarea>
         </div>
 
@@ -198,7 +198,7 @@ function NewMeetupForm(props) {
             id="price4"
             required
             rows="1"
-            ref={price1InoutRef}
+            ref={price4InoutRef}
           ></textarea>
         </div>
 
