@@ -2,27 +2,27 @@
   background-color: rgb(249, 249, 249);
   border-radius: 6px;
   border: 1px solid black;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
 
+  min-height: 700px;
 
 
 }
 
 .section{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
 
   min-height: 700px;
 }
 
 .image {
   justify-content: center;
-  margin-top: 0%;
-  margin-left: 2;
+  margin-top: 50px;
+  margin-left: 20px;
   width: 800px;
-  height: 40rem;
   overflow: hidden;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -58,6 +58,7 @@
 .h3 {
   font-size: 3.5rem;
 
+  margin-top: 100px;
   height: 40px;
   color: #2c292b;
   text-align: center;
@@ -66,12 +67,13 @@
 }
 
 .actions {
+
+  position: relative;
+
   padding: 1rem;
   text-align: center;
   width:200px;
-  height: 150px;
-  margin-top: 25%;
-  margin-left: 9%;
+  height: 300px;
 }
 
 .actions button {
