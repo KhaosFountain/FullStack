@@ -10,9 +10,10 @@ function MeetupItem(props) {
   }
 
   return (
+    <>
+    <h3 className={classes.h3}>{props.title}</h3>
     <li className={classes.item}>
-      <h3 className={classes.h3}>{props.title}</h3>
-      <Card>
+      <section className = {classes.section}>
         <div className={classes.image}>
           <img src={props.image} alt={props.title} />
         </div>
@@ -22,8 +23,9 @@ function MeetupItem(props) {
         <div className={classes.actions}>
           <button onClick={showDetailsHandler}>Show Details</button>
         </div>
-      </Card>
+      </section>
     </li>
+    </>
     
   );
 }

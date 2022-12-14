@@ -12,7 +12,18 @@ export default function () {
     for (let ii = 0; ii < globalCtx.theGlobalObject.meetings.length; ii++) {
         let temp = globalCtx.theGlobalObject.meetings[ii]
         if (temp.meetingId.trim() == router.query.meetupId.trim()) {
-            returnVal = <MeetupDetail image={temp.image} title={temp.title} description={temp.description} />
+            returnVal = <MeetupDetail image={temp.image}
+             title={temp.title}
+             description={temp.description}
+             option1={temp.option1} 
+             option2={temp.option2} 
+             option3={temp.option3} 
+             option4={temp.option4} 
+             option1Detail={temp.option1Detail}
+             option2Detail={temp.option2Detail}
+             option3Detail={temp.option3Detail}
+             option4Detail={temp.option4Detail}
+             />
         }
     }
     // In the real world, we'd put the code above in the store context module. 
