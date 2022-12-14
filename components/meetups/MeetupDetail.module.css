@@ -3,9 +3,17 @@
 }
 
 .detail img {
-    width: 40%;
+    width: 50%;
 }
 
+.body{
+    background-color: rgb(29, 30, 40);
+    color: white;
+}
+
+.image{
+    margin-top: 100px;
+}
 
 .opt {
     margin: 0;
@@ -41,7 +49,7 @@
 }
 
 .priceCard:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 50px 5px rgb(167, 152, 152);
     transform: scale(1.15);
 }
 

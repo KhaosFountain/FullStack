@@ -26,9 +26,9 @@ function MeetupDetail(props) {
 
   return (
     <>
-      <section>
+      <section className={styles.body}>
         <div className={styles.detail}>
-          <img src={props.image} alt={props.title} />
+          <img className={styles.image} src={props.image} alt={props.title} />
           <h1>{props.title}</h1>
           <address>{props.address}</address>
           <p>{props.description}</p>
