@@ -26,19 +26,13 @@ function MainNavigation() {
       <HamMenu toggleMenuHide={() => toggleMenuHide()} />
       <HamMenuFAB toggleMenuHide={() => toggleMenuHide()} />
       
-      <div className={classes.Title}>
-        <p>
-            Services Web Page
-        </p>
-      </div>
-      
       <nav>
         <ul>
           <li>
             <Link href='/'>Home</Link> 
           </li>
           <li>
-            <Link href='/new-meetup'>Add New Meetup</Link>
+            <Link href='/new-meetup'>Add New Service</Link>
           </li>
         </ul>
       </nav>
