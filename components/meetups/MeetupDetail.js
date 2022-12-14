@@ -44,11 +44,12 @@ function MeetupDetail(props) {
           </div>
           {popup && (
             <div className={styles.popup}>
-            <div className={styles.overlay }></div>
+            <div className={styles.overlay} onClick={Option1}></div>
             <div className={styles.popupContent}>
-                <h2>hello popup</h2>
+                <h2>{props.option1}</h2>
+                <p>Phone Number: {props.phoneNumber}</p>
                 <p>{props.option1Detail}</p>
-                <button className={styles.closeBtn} onClick={Option1}>CLOSE</button>
+                <button className={styles.closeBtn} onClick={Option1}></button>
             </div>
           </div>
           )}
@@ -64,11 +65,12 @@ function MeetupDetail(props) {
           </div>
           {popup2 && (
             <div className={styles.popup}>
-            <div className={styles.overlay }></div>
+            <div className={styles.overlay} onClick={Option2}></div>
             <div className={styles.popupContent}>
-                <h2>hello popup</h2>
+                <h2>{props.option2}</h2>
+                <p>Phone Number: {props.phoneNumber}</p>
                 <p>{props.option2Detail}</p>
-                <button className={styles.closeBtn} onClick={Option2}>CLOSE</button>
+                <button className={styles.closeBtn} onClick={Option2}></button>
             </div>
           </div>
           )}
@@ -77,22 +79,24 @@ function MeetupDetail(props) {
             <div className={styles.cardDetail}>
               <div className={styles.cardDetail}>
                 <h4>
-                  <p>{props.option3}</p>
+                  <p>{props.option3}     $100</p>
                 </h4>
               </div>
             </div>
           </div>
           {popup3 && (
             <div className={styles.popup}>
-            <div className={styles.overlay }></div>
+            <div className={styles.overlay} onClick={Option3}></div>
             <div className={styles.popupContent}>
-                <h2>hello popup</h2>
+                <h2>{props.option3}</h2>
+                <p>Phone Number: {props.phoneNumber}</p>
                 <p>{props.option3Detail}</p>
-                <button className={styles.closeBtn} onClick={Option3}>CLOSE</button>
+                <button className={styles.closeBtn} onClick={Option3}></button>
             </div>
           </div>
           )}
 
+          
           <div className={styles.priceCard} onClick={Option4}>
             <div className={styles.cardDetail}>
               <div className={styles.cardDetail}>
@@ -105,11 +109,12 @@ function MeetupDetail(props) {
         </div>
         {popup4 && (
             <div className={styles.popup}>
-            <div className={styles.overlay }></div>
+            <div className={styles.overlay} onClick={Option4}></div>
             <div className={styles.popupContent}>
-                <h2>hello popup</h2>
+                <h2>{props.option4}</h2>
+                <p>Phone Number: {props.phoneNumber}</p>
                 <p>{props.option4Detail}</p>
-                <button className={styles.closeBtn} onClick={Option4}>CLOSE</button>
+                <button className={styles.closeBtn} onClick={Option4}></button>
             </div>
           </div>
           )}
