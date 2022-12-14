@@ -11,7 +11,8 @@ function MeetupItem(props) {
 
   return (
     <>
-      <h3 className={classes.h3}>{props.title}</h3>
+    <div classname={classes.body}>
+    <h3 className={classes.h3}>{props.title}</h3>
       <li className={classes.item}>
         <section className={classes.section}>
           <div className={classes.image}>
@@ -25,6 +26,8 @@ function MeetupItem(props) {
           </div>
         </section>
       </li>
+    </div>
+      
     </>
   );
 }

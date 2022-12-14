@@ -8,11 +8,16 @@
 
 }
 
+.body{
+  background-color: rgb(29, 30, 40);
+}
+
 .section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  background-color: rgb(29, 30, 40);
+  color: white;
   align-items: center;
 
   min-height: 700px;
@@ -60,7 +65,7 @@
 
   margin-top: 100px;
   height: 40px;
-  color: #2c292b;
+  color: rgb(255, 157, 0);
   text-align: center;
   margin-bottom: 45px;
   margin-top: 15px;
@@ -70,6 +75,7 @@
 
   position: relative;
 
+  
   padding: 1rem;
   text-align: center;
   width:200px;
@@ -81,9 +87,9 @@
 
   cursor: pointer;
 
-  color:  #1a2920;
+  color:  #ffffff;
 
-  border: 1px solid #77002e;
+  border: 1px solid #ffffff;
 
   background-color: transparent;
 
@@ -94,7 +100,7 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: #e5e2ff;
+  background-color: #b7b5ce;
 
   
 }
