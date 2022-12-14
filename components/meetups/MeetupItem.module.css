@@ -29,6 +29,8 @@
 }
 
 .image img {
+  margin-top: -50px;
+  margin-left: 0%;
   width: 100%;
 
   object-fit: cover;
@@ -37,6 +39,7 @@
 }
 
 .content {
+  background-color: aqua;
   text-align: center;
 
   padding: 1rem;
