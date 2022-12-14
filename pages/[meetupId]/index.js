@@ -23,6 +23,7 @@ export default function () {
              option2Detail={temp.option2Detail}
              option3Detail={temp.option3Detail}
              option4Detail={temp.option4Detail}
+             phoneNumber={temp.phoneNumber}
              />
         }
     }

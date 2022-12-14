@@ -18,6 +18,8 @@ function NewMeetupForm(props) {
   const option3InputRef = useRef();
   const option4InputRef = useRef();
 
+  const phoneNumberInputRef = useRef();
+
   function submitHandler(event) {
     event.preventDefault();
 
@@ -36,6 +38,8 @@ function NewMeetupForm(props) {
     const enteredOption3Detail = option3DetailInputRef.current.value;
     const enteredOption4Detail = option4DetailInputRef.current.value;
 
+    const enteredPhoneNumber = phoneNumberInputRef.current.value;
+
     const meetupData = {
       meetingId: enteredTitle,
       title: enteredTitle,
@@ -50,6 +54,7 @@ function NewMeetupForm(props) {
       option2Detail: enteredOption2Detail,
       option3Detail: enteredOption3Detail,
       option4Detail: enteredOption4Detail,
+      phoneNumber: enteredPhoneNumber,
     };
 
     props.onAddMeetup(meetupData);
@@ -148,6 +153,16 @@ function NewMeetupForm(props) {
             required
             rows="4"
             ref={option4DetailInputRef}
+          ></textarea>
+        </div>
+
+        <div className={classes.control}>
+          <label htmlFor="phoneNumber">Phone Number</label>
+          <textarea
+            id="phoneNumber"
+            required
+            rows="1"
+            ref={phoneNumberInputRef}
           ></textarea>
         </div>
 
